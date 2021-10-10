@@ -2,12 +2,17 @@
 
 Simple exercise in C++ to help understand basic concepts.  In this game you roll a 6 sided dice against an opponent 1,000,000 times.  Whoever rolls the higher number more times WINS!
 
+
 #### CONCEPTS
 
 C++ Classes (Dice, Player)
+
 time.h - to seed pseudo-random number generator
+
 stdlib.h - pseudo-random function rand()
+
 time_t - using time_t object
+
 
 ## Instructions
 
