@@ -5,7 +5,9 @@
 using namespace std;
 
 int main () {
-
+    time_t startTime;
+    time(&startTime);
+    time_t endTime;
     Dice dice;
     Player player("Player");
     Player opponent("Opponent");
@@ -46,6 +48,10 @@ int main () {
     if(player.score == opponent.score){
         cout << "WOW! It's a draw!" << endl;
     }
+
+    time(&endTime);
+    double seconds = difftime(endTime, startTime);
+    cout << "Game took: " << seconds << " seconds." << endl;
 
     return 0;
 }
