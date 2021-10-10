@@ -1,4 +1,4 @@
-# CPP-DICE-GAME
+# :game_die: CPP-DICE-GAME :game_die:
 
 Simple exercise in C++ to help understand basic concepts.  In this game you roll a 6 sided dice against an opponent 1,000,000 times.  Whoever rolls the higher number more times WINS!
 
