@@ -31,4 +31,6 @@ time_t - using time_t object
 
     - User-input prompts for number of turns desired, option for logs.
     - User-input prompt to change number of sides per dice roll.
+    - Find out how long it takes to run 1,000,000,000 turns (with || without logs)
+        -- 33 seconds without logs...
     - EPIC loot-boxes and paid DLC.

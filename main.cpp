@@ -4,17 +4,28 @@
 
 using namespace std;
 
+string inputPrompt(){
+    string inputPrompt = "Please enter how many rounds you'd like: ";
+    inputPrompt += "(Default 1,000,000): ";
+    return inputPrompt;
+}
+
 int main () {
-    time_t startTime;
-    time(&startTime);
-    time_t endTime;
+    unsigned long long turns = 1000000;
+    cout << inputPrompt();
+    cin.ignore(0, '\r');
+    cin >> turns;
+    if(cin.fail()) return 1;
+    time_t startTime = time(&startTime);
     Dice dice;
     Player player("Player");
     Player opponent("Opponent");
-
     srand (time(NULL));
 
-    for(int i = 0; i < 1000000; i++){
+    // loop through game and determine outcome
+    // cout logs 
+
+    for(int i = 0; i < turns; i++){
         player.roll = dice.roll();
         opponent.roll = dice.roll();
         //cout << "You rolled: " << player.roll << endl;
@@ -49,7 +60,7 @@ int main () {
         cout << "WOW! It's a draw!" << endl;
     }
 
-    time(&endTime);
+    time_t endTime = time(&endTime);
     double seconds = difftime(endTime, startTime);
     cout << "Game took: " << seconds << " seconds." << endl;
 
