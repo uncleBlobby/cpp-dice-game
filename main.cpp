@@ -11,16 +11,16 @@ string inputPrompt(){
 }
 
 int main () {
+    Dice dice;
+    Player player("Player");
+    Player opponent("Opponent");
+    srand (time(NULL));
     unsigned long long turns = 1000000;
     cout << inputPrompt();
     cin.ignore(0, '\r');
     cin >> turns;
     if(cin.fail()) return 1;
     time_t startTime = time(&startTime);
-    Dice dice;
-    Player player("Player");
-    Player opponent("Opponent");
-    srand (time(NULL));
 
     // loop through game and determine outcome
     // cout logs 
@@ -28,19 +28,19 @@ int main () {
     for(int i = 0; i < turns; i++){
         player.roll = dice.roll();
         opponent.roll = dice.roll();
-        cout << "You rolled: " << player.roll << endl;
-        cout << "Opponent rolled: " << opponent.roll << endl;
+        // cout << "You rolled: " << player.roll << endl;
+        // cout << "Opponent rolled: " << opponent.roll << endl;
 
         if(player.roll > opponent.roll){
-            cout << "You win this round." << endl;
+            // cout << "You win this round." << endl;
             player.score += 1;
         }
         if(player.roll < opponent.roll){
-            cout << "Opponent wins this round." << endl;
+            // cout << "Opponent wins this round." << endl;
             opponent.score += 1;
         }
         if(player.roll == opponent.roll){
-            cout << "It's a draw." << endl;
+            // cout << "It's a draw." << endl;
         }
     }
 
