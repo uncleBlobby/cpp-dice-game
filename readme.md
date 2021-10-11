@@ -29,8 +29,13 @@ time_t - using time_t object
 
 ## TO-DO
 
-    - User-input prompts for number of turns desired, option for logs.
+    - Option for logs.
+    - GET MORE PRECISE TIME lol :microscope:
+    - Option for history. ***
     - User-input prompt to change number of sides per dice roll.
     - Find out how long it takes to run 1,000,000,000 turns (with || without logs)
         -- 33 seconds without logs...
+        -- x with logs (I gave up to save my CPU)...
+            -- need to install sensors to monitor temp
+            -- need to close all other apps while attempting :nerd_face:
     - EPIC loot-boxes and paid DLC.
