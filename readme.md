@@ -24,8 +24,11 @@ time_t - using time_t object
 
 ## Performance
 
-    App will run 1,000,000 turns in about 11 seconds on my machine (with logs each turn).
-    App will run 1,000,000 turns in less than 1 second on my machine (with logs only at end of match).
+    1,000,000 (logs) ~~ 11 seconds
+    1,000,000 (no logs) ~~ 1 second
+
+    1,000,000,000 (logs) ~~ TBD
+    1,000,000,000 (no logs) ~~ 33 seconds
 
 ## TO-DO
 
