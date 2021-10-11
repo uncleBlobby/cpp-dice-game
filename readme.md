@@ -41,4 +41,5 @@ time_t - using time_t object
         -- x with logs (I gave up to save my CPU)...
             -- need to install sensors to monitor temp
             -- need to close all other apps while attempting :nerd_face:
+    - multithreading
     - EPIC loot-boxes and paid DLC.
